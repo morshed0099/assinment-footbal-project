@@ -1,0 +1,351 @@
+
+/* set all needed color  */
+:root{
+    --bgcolor:#161616;
+    --btncolor: #DD0000;
+    --bodycolor:#FFFFFF;
+}
+body{
+    background-color: var(--bodycolor);
+    font-family: 'Lobster', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+    margin: 0;  
+    padding: 0;  
+    
+}
+.main-body-container{
+padding: 30px 90px;
+
+   
+}
+h1{
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 80px;
+    color:var(--bodycolor);
+
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+
+.btn-primary{
+    color: var(--btncolor);
+    padding:10px 15px;
+    border-radius: 5px;
+    color:var(--bodycolor);
+    background-color: var(--btncolor);
+    animation: move 2s infinite;  
+  }
+
+  /* botton animation */
+  #animate-icon{    
+    position: relative;
+    animation: btnanimation 1s infinite;
+  }
+  @keyframes move{
+    0%{background-color: var(--bodycolor);color: var(--btncolor);}
+    100%{background-color: var(--btncolor);color: var(--bodycolor);}
+  }
+  @keyframes btnanimation {
+    from {left:0px}
+    to {left:10px}
+  }
+
+/* stye for bannar section  */
+
+.top-bananr{
+    display: flex;    
+    align-items: center;   
+    border-radius: 30px;  
+    background-color: var(--bgcolor);  
+    margin-bottom: 50px;
+    width: 100%;
+  
+}
+.bannar-articale{
+    width: 50%;
+    padding: 0px 0px 0px 90px;
+    margin-bottom: 80px;
+}
+.bannar-articale>p{
+    color:var(--bodycolor);
+    margin-bottom: 26px;
+}
+
+.bannar-image{
+    width: 50%;
+    padding: 0px 42px; 
+ 
+}
+.bannar-image>img{
+    width: 100%;
+    margin-bottom: -12px;    
+} 
+
+/* main body styleing  */
+.body-container{     
+    width:100%;
+    display: flex; 
+    justify-content: center;   
+}
+
+/* side menu  */
+.menu-container {
+    display: flex;
+    flex-direction:column;
+    background-color: var(--bgcolor);
+    width: 300px;    
+    border-radius: 10px;    
+
+  }
+  .menu-container > a {
+    background-color:var(--bodycolor);
+    padding: 20px;    
+    margin: 10px;
+    font-size: 30px;
+    border-radius: 10px;
+    color: #161616;
+    font-size: 20px;
+    text-align: center;
+   
+  }
+#active{
+    color:var(--bodycolor);
+    background-color:var(--btncolor);
+}
+/* side menu  end */
+
+/* blog section  */
+
+article{
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     gap:18px; 
+     margin-bottom: 50px;
+     margin-left: 10px;    
+}
+.blogs{   
+    width:268px;
+    height:312px;
+    border: 1px solid rgb(228, 214, 214);
+    border-radius: 10px;
+}
+.blog-image >img{
+    width: 100%;
+
+}
+.blog-transfer-btn,.title,.blog-duration{
+    padding: 5px 10px;
+}
+.blog-duration>span{
+    margin-left: 20px;
+}
+/* upcoming match page style */
+#team-flag{
+    width: 30%;
+    padding: 5px;
+}
+.team-flags{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.match-deadline-time{
+     color:#751111;
+    text-align: center;
+
+}
+.team-name{
+    text-align: center;
+}
+.match-shedule{
+    width:268px;
+    height:242px;
+    border: 1px solid rgb(228, 214, 214);
+    border-radius: 10px;
+}
+/* all group page style  */
+.group{
+    width:268px;
+    height:242px;
+    border: 1px solid rgb(228, 214, 214);
+    border-radius: 10px;
+}
+.group-title{
+    text-align: center;
+    font-weight: 700;
+    color: var(--btncolor);
+}
+.group>p{
+    text-align: center; 
+    font-weight: bold;
+    font-size: 01em;
+    color:#161616
+}
+/* footer style  */
+footer{
+    background-color: var(--bgcolor);
+    width: 100%;  
+}
+.footer-title{
+    border-bottom: 1px solid gray;
+}
+.footer-title >h3{
+    text-align: center;
+   padding: 20px 140px; 
+   color: var(--bodycolor);
+   font-size: 1.5em;
+    
+}
+.footer-menu{
+    display: flex;
+    justify-content: space-between;
+    color:gray;
+    margin-bottom: 30px;
+    padding: 5px 10px;
+}
+.social-media{
+    color: var(--bodycolor);
+    text-align: center;
+    font-size: 1.5em;
+    margin-left: 5px;    
+}
+.social-media>span>a{
+    color: var(--bodycolor);
+    margin-left: 10px;
+}
+.tablet-btn{
+    display: none;
+}
+
+/* style for moblie device */
+@media only screen and (max-width:688px) {
+   .main-body-container{
+   padding:8px;margin: 0;
+   } 
+    .bannar-articale>h1{
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+        color: var(--bodycolor);
+}   
+  .top-bananr{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+}
+  #animate-icon{
+    align-items: center;
+}
+ .bannar-articale{
+    width: 100%;
+    margin:0;
+    padding: 7px;
+    text-align: center;
+    margin-bottom: 8px;
+ }
+ 
+ .body-container{  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+ }
+ .menu-container {    
+    flex-direction:column;  
+    align-items: center;
+    border-radius: 5px;
+    background-color: var(--bodycolor);
+
+  }
+  .menu-container > a{
+    border: 1px solid gray;
+  }
+article{
+    grid-template-columns: repeat(1,1fr);
+    gap:30px;
+    justify-content: center;
+}
+.footer-menu{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.social-media>span>a{
+    color: var(--btncolor);
+    margin-left: 10px;
+    background-color: var(--bgcolor); 
+}
+
+    }
+
+/* styleing for tab  */
+@media only screen and (min-width:689px) and (max-width:992px){
+    .main-body-container{
+        padding:8px;margin: 0;
+        } 
+        h1{
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 30px;           
+            color:var(--bodycolor);
+        
+        }
+        .bannar-articale{
+            padding: 0 10px;
+
+        }
+       
+        .top-bananr{
+            width: 100%;
+            padding:10 10px; 
+        
+            
+        } 
+        .body-container{             
+        
+            flex-direction: column;        
+
+        }  
+    
+            .menu-container {   
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                 background-color: var(--bodycolor);
+                 width:100%;
+                 height:150px;                 
+                border-radius:5px;
+                }
+            .menu-container>a{
+                border: 1px solid gray;
+            }
+            article{
+                grid-template-columns: repeat(2,1fr);
+                gap:20px;
+                justify-content: center;
+                align-items: center;
+                margin-left: 39px;
+            }  
+            .tablet-btn{
+                display: block;               
+                margin-bottom: 40px;
+                margin-left:45% ;
+            }
+
+          }
+    
+   
+        
+    
+
+    
