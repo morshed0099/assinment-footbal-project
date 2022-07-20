@@ -348,6 +348,11 @@ article{
                 margin-bottom: 40px;
                 margin-left:45% ;
             }
+            .btn-see-more{
+                padding: 10px 15px;
+                background-color: var(--btncolor);
+                color: var(--bodycolor);
+            }
 
           }
     
