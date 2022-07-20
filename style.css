@@ -85,7 +85,7 @@ li{
 }
 .bannar-image>img{
     width: 100%;
-    margin-bottom: -7px;    
+    margin-bottom: -11px;    
 } 
 
 /* main body styleing  */
@@ -251,7 +251,10 @@ footer{
     text-align: center;
     margin-bottom: 8px;
  }
- 
+ .bannar-image>img{
+           
+    margin-bottom: -5px;    
+}
  .body-container{  
     flex-direction: column;
     justify-content: center;
@@ -303,6 +306,10 @@ article{
         .bannar-articale{
             padding: 0 10px;
 
+        }
+        .bannar-image>img{
+           
+            margin-bottom: -5px;    
         }
        
         .top-bananr{
